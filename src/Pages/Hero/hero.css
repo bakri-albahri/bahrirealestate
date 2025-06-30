@@ -1,0 +1,111 @@
+.hero{
+    background-color: var(--black);
+    position: relative;
+    &::before{
+        content: "";
+        position: absolute;
+        top: -80px;
+        width: 320px;
+        height: 320px;
+        background-color: rgba(255, 255, 255, 0.522);
+        filter: blur(100px);
+    }
+    .container{
+        .left-section{
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            color: #fff;
+            .title{
+                max-width: 350px;
+                position: relative;
+                z-index: 1;
+                .orange-circle{
+                    position: absolute;
+                    background:var(--orange-gradient);
+                    border-radius: 50%;
+                    z-index: -1;
+                    height: 50px;
+                    width: 50px;
+                    top: -13%;
+                    right:36%;
+                }
+                h1{
+                    font-weight: 600;
+                    font-size: 45px;
+                    line-height: 1.1;
+                }
+            }
+            .desc{
+                color: #8C8B8B;
+                font-size: 14px;
+                span{
+                    display: block;
+                }
+            }
+            .search-bar{
+                display: flex;
+                justify-content: space-between ;
+                align-items: center;
+                background-color: #fff;
+                padding: 8px 16px;
+                border-radius: 4px;
+                i{
+                    color: var(--blue);
+                    font-size: 25px;
+                }
+                input{
+                    border: none;
+                    outline: none;
+                    &::placeholder{
+                        transition:  0.3s;
+                    }
+                    &:focus{
+                        &::placeholder{
+                            opacity: 00;
+                        }
+                    }
+                }
+            }
+            .stats{
+                display: flex;
+                justify-content: center ;
+                align-items: center;
+                gap: 35px;
+                 flex-wrap: wrap;
+                .stat{
+                    text-align: center;
+                    .num{
+                        display: block;
+                        font-size: 35px;
+                        .plus{
+                            color: var(--orange);
+                            margin-left: 10px;
+                        }
+                    }
+                    .name{
+                        color: #8C8B8B;
+                        font-size: 15px;
+                    }
+                }
+            }
+            @media (min-width:992px) {
+                .title {
+                    max-width: 450px;
+                    .orange-circle{
+                        height: 64px;
+                        width: 64px;
+                        top: -13%;
+                        right:34%;
+                    }
+                    h1{
+                        font-size: 60px;
+                    }
+                }
+                .stats{
+                    flex-wrap: nowrap;
+                }
+            }
+        }
+    }
+}

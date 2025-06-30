@@ -1,0 +1,45 @@
+.footer{
+    background-color: var(--black);
+    .container{
+        padding: 60px 0;
+        display: grid;
+        grid-template-columns: repeat(auto-fill , minmax(300px , 1fr));
+        gap: 50px;
+        @media (min-width:992px) {
+            grid-template-columns: repeat(auto-fill , minmax(30% , 1fr));
+            align-items: start;
+        }
+        .left-section{
+            text-align: center;
+            img{
+                width: 200px;
+            }
+            p{
+                color: #fff;
+            }
+        }
+        .companies-section{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-content: center;
+            gap: 20px;
+            .row{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                img{
+                    width: 150px;
+                }
+            }
+        }
+        .right-section{
+            text-align: center;
+            color: #fff;
+            .num{
+                margin: 15px 0;
+            }
+        }
+    }
+}

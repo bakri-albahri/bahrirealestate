@@ -1,0 +1,14 @@
+.section-title{
+    margin-bottom: 20px;
+    h1{
+        color: var(--darkBlue);
+    }
+    h2{
+        color: var(--orange);
+    }
+    p{
+        color: #777;
+        font-size: 14px;
+        max-width: 600px;
+    }
+}

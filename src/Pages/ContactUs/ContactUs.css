@@ -1,0 +1,94 @@
+.contact-us{
+    .container{
+        .left-section{
+            width: 100%;
+            .card-container{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                gap:20px;
+                .row{
+                    display: flex;
+                    justify-content: flex-start;
+                    flex-direction: column;
+                    gap: 30px;
+                    .card{
+                        width: 100%;
+                        border: 1px solid #80808024;
+                        border-radius: 4px;
+                        padding: 16px;
+                        display: flex;
+                        flex-direction: column;
+                        transition: all 0.3s ease-in;
+                        &:hover{
+                            transform: scale(1.1);
+                            box-shadow: var(--shadow);
+                        }
+                        .details{
+                            display: flex;
+                            align-items: center;
+                            justify-content: flex-start;
+                            gap: 25px;
+                            span{
+                                display: block;
+                            }
+                            .icon{
+                                display: flex;
+                                background: #eeeeff;
+                                padding: 10px;
+                                color: var(--blue);
+                                svg{
+                                    width: 25px;
+                                    height: 25px ;
+                                }
+                            }
+                            .info{
+                                span{
+                                    &:first-child{
+                                        font-weight: 600;
+                                        font-size: 16px;
+                                    }
+                                    &:last-child{
+                                        color: #777;
+                                        font-size: 12px;
+                                    }
+                                }
+                            }
+                        }
+                        .button{
+                            margin-top: 15px;
+                            background-color:#eeeeff;
+                            color: var(--blue);
+                            padding: 8px;
+                            text-align: center;
+                            font-size: 14px;
+                            font-weight: 600;
+                            transition:all  0.3s ease-in;
+                            cursor: pointer;
+                            border-radius: 4px;
+                            &:hover{
+                                background: var(--blue-gradient);
+                                color: #fff;
+                                transform: scale(0.9);
+                            }
+                        }
+                    }
+                    @media (min-width:992px) {
+                        flex-direction: row;
+                        .card{
+                            width: 40%;
+                        }
+                    }
+                }
+            }
+        }
+        .right-section{
+            display: none;
+        }
+        @media (min-width:992px) {
+            .right-section{
+                display: block;
+            }
+        }
+    }
+}
