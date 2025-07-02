@@ -19,9 +19,9 @@ const Header = () => {
 
             <ul className={mobMenu ? "open-menu" : ""}>
               <li><Link to="/bahrirealestate"  onClick={handleMenu}>Home</Link></li>
-              <li><Link to="residencies"  onClick={handleMenu}>Residencies</Link></li>
-              <li><Link to="our-value"  onClick={handleMenu}>Our Value</Link></li>
-              <li><Link to="contact-us"  onClick={handleMenu}>Contact Us</Link></li>
+              <li><Link to="/bahrirealestate/residencies"  onClick={handleMenu}>Residencies</Link></li>
+              <li><Link to="/bahrirealestate/our-value"  onClick={handleMenu}>Our Value</Link></li>
+              <li><Link to="/bahrirealestate/contact-us"  onClick={handleMenu}>Contact Us</Link></li>
               <button className='btn'  onClick={handleMenu}><a href="mailto:bakri.albahri.info@gmail.com">Contact</a></button>
             </ul>
 

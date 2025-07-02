@@ -17,10 +17,10 @@ function App() {
       <Header />
       <Routes>
         <Route path='/bahrirealestate' element={<GitHUb />}>
-          <Route path='/' element={<Hero />} />
-          <Route path='/residencies' element={<Residencies />} />
-          <Route path='/our-value' element={<Value />} />
-          <Route path='/contact-us' element={<ContactUs />} />
+          <Route path='' element={<Hero />} />
+          <Route path='residencies' element={<Residencies />} />
+          <Route path='our-value' element={<Value />} />
+          <Route path='contact-us' element={<ContactUs />} />
         </Route>
       </Routes>
       <Footer />
