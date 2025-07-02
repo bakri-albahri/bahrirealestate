@@ -5,6 +5,8 @@ import 'swiper/css';
 import data from '../../utils/slider.json'
 import SectionTitle from '../../components/website/SectionTitle/SectionTitle';
 import { sliderSettings } from '../../utils/common';
+import img1 from '../../assets/images/r1.png'
+
 const Residencies = () => {
   return (
     <div className='residencies'>
@@ -17,7 +19,7 @@ const Residencies = () => {
                     data.map((card , index)=> (
                         <SwiperSlide key={index}>
                             <div className="card">
-                              <img src={card.image} alt="img" />
+                              <img src={img1} alt="img" />
                               <div className="price">
                                 <span>$ </span>
                                 <span>{card.price}</span>

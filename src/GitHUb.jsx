@@ -3,9 +3,7 @@ import { Outlet } from 'react-router-dom'
 
 const GitHUb = () => {
   return (
-    <div>
         <Outlet />
-    </div>
   )
 }
 
