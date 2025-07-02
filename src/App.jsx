@@ -6,6 +6,7 @@ import Residencies from './Pages/Residencies/Residencies'
 import Value from './Pages/Value/Value'
 import ContactUs from './Pages/ContactUs/ContactUs'
 import Footer from './components/website/Footer/Footer'
+import GitHUb from './GitHUb'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -15,10 +16,12 @@ function App() {
     <div className="app">
       <Header />
       <Routes>
-        <Route path='/bahrirealestate' element={<Hero />} />
-        <Route path='/residencies' element={<Residencies />} />
-        <Route path='/our-value' element={<Value />} />
-        <Route path='/contact-us' element={<ContactUs />} />
+        <Route path='/bahrirealestate' element={<GitHUb />}>
+          <Route path='/' element={<Hero />} />
+          <Route path='/residencies' element={<Residencies />} />
+          <Route path='/our-value' element={<Value />} />
+          <Route path='/contact-us' element={<ContactUs />} />
+        </Route>
       </Routes>
       <Footer />
     </div>
